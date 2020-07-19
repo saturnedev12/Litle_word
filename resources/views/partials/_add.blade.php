@@ -17,9 +17,14 @@
    </div>
    <div class="modal-body">
     <input type="hidden" name="owner" value="Saturne">
-    <input class="inp_title" type="text" name="title"  placeholder="titre" value="">
+    <input class="inp_title" type="text" name="title"  placeholder="titre" >
     <textarea class="inp_texte" type="text" name="content" placeholder="petit mot" value=""></textarea>
 
+      <!--les couleur-->
+      <div class="couleur">
+        <input id="coul" type="color" name="carte_color" value="#ffffff" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="couleur de la  carte" >
+        <input id="coul" type="color" name="texte_color" value="#000000"  class="d-inline-block" tabindex="0" data-toggle="tooltip" title="couleur du texte">
+      </div>
 
    </div>
    <div class="modal-footer">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:3306
--- Généré le :  Sam 18 Juillet 2020 à 23:29
+-- Généré le :  Dim 19 Juillet 2020 à 16:54
 -- Version du serveur :  5.7.30-0ubuntu0.18.04.1
 -- Version de PHP :  7.2.24-0ubuntu0.18.04.6
 
@@ -30,18 +30,21 @@ CREATE TABLE `card` (
   `id` int(11) NOT NULL,
   `title` varchar(225) NOT NULL,
   `id_owner` int(11) NOT NULL,
-  `texte` text NOT NULL
+  `texte` text NOT NULL,
+  `carte_color` varchar(100) NOT NULL,
+  `texte_color` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `card`
 --
 
-INSERT INTO `card` (`id`, `title`, `id_owner`, `texte`) VALUES
-(1, 'la vie', 1, 'Dans la vie on ne fait pas ce que l\'on veut mais on est responsable de ce que l\'on est.'),
-(2, 'l\'amour', 2, 'L\'une des plus grandes douleurs est d\'aimer une personne que tu ne peux pas avoir.'),
-(4, 'le courage', 1, 'Qui ne tente rien n\'a rien , mais qui tente à une chance de gagner '),
-(5, 'la vie', 1, 'Je ne peux imaginer la vie\r\nSans ta présence auprès de moi,\r\nSans la tendresse de tes paroles\r\nEt la douceur de tes doigts.\r\n\r\nJe ne peux imaginer la vie,\r\nSans ton sourire pour illuminer mes jours,\r\nSans ton amour pour réchauffer mes nuits.\r\n\r\nJe ne peux imaginer le vie sans toi,\r\nCar mon bonheur, c\'est à toi que je le dois.\r\n\r\nJe t\'aime...');
+INSERT INTO `card` (`id`, `title`, `id_owner`, `texte`, `carte_color`, `texte_color`) VALUES
+(1, 'la vie', 1, 'Dans la vie on ne fait pas ce que l\'on veut mais on est responsable de ce que l\'on est.', '#FFFFFF', '#060000'),
+(2, 'l\'amour', 2, 'L\'une des plus grandes douleurs est d\'aimer une personne que tu ne peux pas avoir.', '#FD80FF', '#C7C7C7'),
+(4, 'le courage', 1, 'Qui ne tente rien n\'a rien , mais qui tente à une chance de gagner ', '#52ABFF', '#F2F9FF'),
+(5, 'la vie', 1, 'Je ne peux imaginer la vie\r\nSans ta présence auprès de moi,\r\nSans la tendresse de tes paroles\r\nEt la douceur de tes doigts.\r\n\r\nJe ne peux imaginer la vie,\r\nSans ton sourire pour illuminer mes jours,\r\nSans ton amour pour réchauffer mes nuits.\r\n\r\nJe ne peux imaginer le vie sans toi,\r\nCar mon bonheur, c\'est à toi que je le dois.\r\n\r\nJe t\'aime...', '#F5F5F5', '#000000'),
+(7, 'la santé ', 1, 'pour rester en très bonne santé comme moi il faut manger 5 fruit et légume par joiurs', '#bc6cff', '#e9e9e9');
 
 -- --------------------------------------------------------
 
@@ -88,7 +91,7 @@ ALTER TABLE `owner`
 -- AUTO_INCREMENT pour la table `card`
 --
 ALTER TABLE `card`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT pour la table `owner`
 --

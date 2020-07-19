@@ -1,7 +1,7 @@
 <div class="container-fluid content">
   <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
   <!--debut cart -->
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem; background-color:<?php echo e($value->carte_color); ?>; color:<?php echo e($value->texte_color); ?>" >
       <div class="card-body">
           <h5 class="card-title"><?php echo e($value->title); ?></h5>
           <h6 class="card-subtitle mb-2 text-muted"><?php echo e($value->name); ?></h6>

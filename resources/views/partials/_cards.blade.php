@@ -1,7 +1,7 @@
 <div class="container-fluid content">
   @foreach ($data as $value)
   <!--debut cart -->
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem; background-color:{{ $value->carte_color }}; color:{{ $value->texte_color }}" >
       <div class="card-body">
           <h5 class="card-title">{{ $value->title }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ $value->name }}</h6>

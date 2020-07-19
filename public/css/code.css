@@ -1,11 +1,33 @@
 html{
   overflow-x: hidden;
 
-}
 
+}
+/*les input color*/
+.couleur{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  /*background-color: red;*/
+  }
+/*les input color*/
+#coul{
+  width: 30%;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 2px 3px rgb(159, 159, 159);
+  }
 body{
   background-color:rgb(95, 191, 232);
 }
+.content{
+  display: flex;
+  /*background-color:rgb(177, 115, 136);*/
+}
+
 .content{
   display: flex;
   /*background-color:rgb(177, 115, 136);*/
@@ -44,9 +66,16 @@ body{
   z-index: 20;
   transform: translate(10px,10px);
   font-size:30px;
+  left: 90%;
+  bottom: 2ch;
+}
+@media screen and (max-width: 640px) {
+  .add{
+    left: 70%;
+  }
 }
 .modal-body{
-  height: 200px;
+  min-height: 300px;
   display:flex;
   align-items: center;
   justify-content: center;
